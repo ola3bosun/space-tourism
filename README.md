@@ -37,8 +37,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Olatubosun ](https://www.your-site.com)
+- Website - [Olatubosun]
 - Frontend Mentor - [@ola3bosun](https://www.frontendmentor.io/profile/ola3bosun)
-- Twitter - [@Ola2bosun](https://www.twitter.com/Ola2bosun)
+- Twitter - [@Ola2bosun](https://www.twitter.com/Ola2bosun_)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**

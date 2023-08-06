@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<body style="background-image:  url(assets/home/background-home-desktop.jpg);">
+  <div class="content">
+    <header>
+      <div class="logo">
+        <img src="assets/shared/logo.svg" alt="">
+      </div>
+      <div class="hr"></div>
+      
+      <input type="checkbox" id="checkbox_toggle">
+      <label for="checkbox_toggle" class="hamburger">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+        <span class="line line--3"></span>
+      </label>
+
+      <nav>
+        <div class="nav-links active"><p><a href="#"><span>00</span> HOME</a></p></div>
+        <div class="nav-links"><p><a href="destination-moon.html"><span>01</span> DESTINATION</a></p></div>
+        <div class="nav-links"><p><a href="crew-pilot.html"><span>02</span> CREW</a></p></div>
+        <div class="nav-links"><p><a href="technology-vehicle.html"><span>03</span> TECHNOLOGY</a></p></div>
+      </nav>
+    </header>
+    <div class="x">
+      <div class="left">
+        <p>SO, YOU WANT TO TRAVEL TO</p>
+        <h1>SPACE</h1>
+        <p>Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</p>
+      </div>
+      <div class="">
+        <a class="right" href="destination-moon.html"><div class="">EXPLORE</div></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<script>
+  var output = [];
+  var count = 1;
+
+  function fizzBuzz() { 
+    if (count % 3 === 0 && count % 5 === 0) 
+      {output.push("FizzBuzz");}
+    else if (count % 3 === 0){
+      output.push("Fizz");}
+    else if (count % 5 === 0){
+      output.push("Buzz")}
+    else output.push(count);
+
+    count++;
+    console.log(output);
+    }
+</script>
+<script>
+// var numberOfBottles = 99;
+// while (numberOfBottles > 0) {
+//     var bottleWord = "bottles";
+//     if (numberOfBottles === 1) {
+//         bottleWord = "bottle";
+//     }
+//     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+//     console.log(numberOfBottles + " " + bottleWord + " of beer");
+//     console.log("Take one down, pass it around,");
+//         numberOfBottles--;
+//     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+// }
+</script>

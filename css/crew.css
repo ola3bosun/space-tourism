@@ -1,0 +1,126 @@
+.intro p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 100;
+    padding-bottom: 1rem;
+}
+/* body{
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+} */
+.intro span{
+    font-weight: 100;
+    color: rgb(200, 200, 350,.3);
+}
+.crew-body{
+    padding: 2rem 10%;
+    padding-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    transition: all 1.5s ease;
+}
+.crew-member{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.profile{
+    width: 100%;
+}
+.portrait{
+    overflow: hidden;
+    /* max-height: 100%; */
+}
+.portrait img{
+    /* height: 80%; */
+    float: right;
+}
+.post,.name{
+    text-transform: uppercase;
+}
+.post{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(200, 200, 350,.7);
+    padding-bottom: 1rem;
+}
+.name{
+    padding: .5rem 0;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 100;
+}
+.descr{
+    padding: .5rem 0;
+    line-height: 1.5;
+    color: #b5b5b5;
+    letter-spacing: .5px;
+    font-weight: 100;
+    display: inline-block;
+    width: 60%;
+}
+.crew-nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 1.2rem;
+    z-index: 1;
+}
+.circle{
+    margin: 1.5rem 0;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(200, 200, 350,.3);
+    border-radius: 50%;
+    border: 1px solid rgb(200, 200, 350,.3);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 2s ease;
+}
+.circle:hover{
+    background-color: #f5f5f5;
+}
+.current{
+    background-color: #b5b5b5;
+}
+
+@media screen and (max-width:768px){
+    body{
+        background-image: url(assets/crew/background-crew-mobile.jpg) !important;
+        background-color: black; 
+    }
+    .crew-member{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .crew-body{
+        position: unset;
+        padding-bottom: 0;
+    }
+    .portrait{
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .crew-body{
+        padding: 1.5rem 5%;
+    }
+    .descr{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .name{
+        font-size: 2rem;
+    }
+    .post{
+        font-size: 1.5rem;
+    }
+    .crew-nav{
+        bottom: 0;
+    }
+}

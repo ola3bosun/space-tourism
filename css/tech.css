@@ -1,0 +1,143 @@
+
+header{
+    padding-bottom: 2rem;
+}
+.tech-body{
+    padding-left: 10%;
+    position: fixed;
+    bottom: 0;
+    transition: all 1s ease;
+}
+.tech-stack{
+    padding: 1rem 0;
+}
+.tech-body p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+}
+.tech-body span{
+    color:  rgb(200, 200, 350,.3);
+    font-weight: 300;
+}
+.tech-descr h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+}
+.tech-descr p{
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    word-spacing: .2rem;
+    line-height: 24px;
+    color: rgb(200, 200, 350,.5);
+    font-size: 100;
+    text-transform: unset;
+}
+.tech-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.circle{
+    height:70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(200, 200, 350,.5);
+    border-radius: 50%;
+    background-color: transparent;
+}
+.circle a {
+    text-decoration: none;
+    color: rgb(200, 200, 350,.5);
+    font-size: 1.5rem;
+}
+.tech-stack{
+    display: flex;
+    padding: 2rem 0;
+    /* gap: 2rem; */
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+    gap: 1.5rem;
+    width: 50%;
+}
+.present{
+    background-color: white;
+
+}
+.present a{
+    color: black;
+}
+.right{
+    width: fit-content;
+    /* transition: all 1s ease; */
+}
+.righ img{
+    height: 400px;
+    width: 400px;
+}
+.mob{
+    display: none;
+}
+@media screen and (max-width:768px){
+    body{
+        background-repeat: repeat-y;
+    }
+    .mob{
+        display: block;
+    }
+    .desk{
+        display: none;
+    }
+    .righ{
+        width: 100%;
+    }
+    .righ img{
+        width: 100vw;
+    }
+    .tech-stack{
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+        justify-content: center;
+    }
+    .left{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .tech-nav{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .tech-body{
+        position: unset;
+        padding-left: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media  screen and (max-width: 450px) {
+    .tech-body{
+        /* padding: 0 1rem; */
+        padding-left: 0;
+        font-size: 80%;
+    }
+    .tech-descr p{
+        font-size: 1rem;
+       
+    }
+    .left h1{
+        font-size: 2.5rem;
+    }
+    .left{
+        padding: 1rem;
+    }
+}
